@@ -1,0 +1,48 @@
+<div class="flex-btw header-border">
+    <div class="header">
+        Task Details
+    </div>
+
+    <div>
+        <mat-icon style="cursor: pointer;" (click)="closeModal()" color="primary">
+            close
+        </mat-icon>
+    </div>
+</div>
+
+<div class="mt-2">
+    <div class="flex-btw">
+        <div class="detail">Task ID</div>
+        <div class="description">{{taskDetails?.id}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">Name</div>
+        <div class="description">{{taskDetails?.name}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">Description</div>
+        <div class="description">{{taskDetails?.description}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">Start Date</div>
+        <div class="description">{{taskDetails?.startdate}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">End Date</div>
+        <div class="description">{{taskDetails?.enddate}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">Priority</div>
+        <div class="description">{{taskDetails?.priority}}</div>
+    </div>
+
+    <div class="flex-btw mt-2">
+        <div class="detail">Status</div>
+        <div class="description">{{taskDetails?.status}}</div>
+    </div>
+</div>

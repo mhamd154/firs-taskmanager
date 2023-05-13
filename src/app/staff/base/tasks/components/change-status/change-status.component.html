@@ -1,0 +1,29 @@
+<div class="flex-btw header-border">
+    <div class="header">
+        Change Status
+    </div>
+
+    <div>
+        <mat-icon style="cursor: pointer;" (click)="closeModal()" color="primary">
+            close
+        </mat-icon>
+    </div>
+</div>
+
+<div>
+    <div class="mt-2">
+        <div class="form-label">Change Status <sup>*</sup></div>
+        <mat-form-field class="signup-form full-width" appearance="outline">
+            <mat-select placeholder="Select status">
+              <mat-option value="Pending">Pending</mat-option>
+              <mat-option value="In progress">In progress</mat-option>
+              <mat-option value="Completed">Completed</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="flex-end">
+        <button (click)="closeModal()" color="primary" mat-flat-button>Confirm</button>
+    </div>
+
+</div>

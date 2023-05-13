@@ -1,0 +1,18 @@
+@import "../../../../../../assets/scss/variable.scss";
+@import "../../../../../../assets/scss/mixin.scss";
+
+.header{
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header-border{
+    border-bottom: 1px solid $primary-color;
+}
+
+::ng-deep .signup-form{
+    .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin: 0;
+    }
+}

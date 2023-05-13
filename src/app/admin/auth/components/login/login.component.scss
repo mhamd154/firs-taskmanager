@@ -1,0 +1,47 @@
+@import "../../../../../assets/scss/variable.scss";
+@import "../../../../../assets/scss/mixin.scss";
+
+.container{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 35%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 50px 60px;
+    box-shadow: #d1b7b5 0px 8px 21px, #d1b7b5 0px 7px 7px, #d1b7b5 0px 4px 8px;
+}
+
+.header{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sub-header{
+    font-size: 12px;
+}
+
+::ng-deep .signup-form{
+    .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin: 0;
+    }
+}
+
+.forgot-password{
+    color: $primary-color;
+    font-size: 12px;
+}
+
+.link-highlight{
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

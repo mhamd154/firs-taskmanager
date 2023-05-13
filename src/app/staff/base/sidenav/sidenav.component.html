@@ -1,0 +1,41 @@
+<mat-drawer-container class="container-height">
+    <mat-drawer class="left-nav" mode="side" opened>
+        <div class="custom-scroll-bar left-section">
+            <img src="/assets/images/firs_logo.png" width="120">
+            <div class="mt-3">
+                <div *ngFor="let item of sideNavList" class="flex-el nav-item" 
+                routerLinkActive="nav-item-active" [routerLink]="item.route">
+                    <div><mat-icon>{{item?.icon}}</mat-icon></div>
+                    <div>&nbsp; &nbsp; {{item?.name}}</div>
+                </div>
+            </div>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content class="right-nav">
+        <div class="top-bar flex-btw">
+            <div class="flex-btw">
+                <mat-icon style="cursor: pointer;" color="primary">
+                    notifications
+                </mat-icon>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="profile-circle">
+                    {{getInitials(fullName)}}
+                </div>
+            </div>
+
+            
+
+            &nbsp;&nbsp;
+
+            <button matTooltip="Logout" mat-icon-button (click)="logout()">
+                <mat-icon style="cursor: pointer;" color="warn">
+                    logout
+                </mat-icon>
+            </button>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+  
